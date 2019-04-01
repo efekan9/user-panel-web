@@ -1,0 +1,25 @@
+<mat-toolbar>
+  <span>Login | User Panel</span>
+</mat-toolbar>
+<div class="container my-5">
+    <mat-card class="my-card col-lg-6 mx-auto">
+        <mat-card-content>
+          <form class="my-form">
+            <mat-form-field class="w-100">
+              <mat-label>username</mat-label>
+              <input matInput [formControl]="usernameControl" placeholder="Username" name="username">
+              <mat-error  class="mb-2" *ngIf="usernameControl.invalid">*{{getErrorMessage(usernameControl)}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="w-100">
+              <mat-label>Password</mat-label>
+              <input matInput [formControl]="passwordControl" type="password" placeholder="Password" name="password">
+              <mat-error  class="mb-2" *ngIf="passwordControl.invalid">*{{getErrorMessage(passwordControl)}}</mat-error>
+            </mat-form-field>
+          </form>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button (click)="onLoginClick()" color="primary">LOGIN</button>
+         <button mat-raised-button (click)="onRegisterClick()" color="primary">REGISTER</button>
+        </mat-card-actions>
+      </mat-card>
+</div>

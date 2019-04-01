@@ -1,0 +1,34 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+    &:active,
+    :focus {
+      outline: none !important;
+    }
+  }
+  
+  label {
+    margin-bottom: 0;
+  }
+
+  mat-toolbar.mat-toolbar-single-row {
+    background: #3f51b5;
+    color: #fff;
+  }
+
+  body {
+    background-color: #eee;
+    color: #3c4858;
+    font-weight: 300;
+  }
+  .mat-card-header {
+    border-radius: 3px !important;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(244,67,54,.4);
+    border-bottom: 0;
+    margin-top: -50px !important;
+    padding: 15px;
+    background: linear-gradient(60deg, #3d4ca0, #2d41b3);
+    color: white;
+  
+  }
